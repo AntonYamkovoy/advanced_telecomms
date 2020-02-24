@@ -184,6 +184,7 @@ def proxy_srv_http(web_srv, port, my_connection, data, my_address, url,bandwidth
 
     my_socket2.send(data)
     b = len(data)
+    my_socket2.settimeout(3)
 
 
     if url in cache:
